@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>linear Algebra</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="myCSS/index.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="row">
+      <div class="col-12">
+      
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img  class="nav-img "  src="myImg/logo1.png" alt="">
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Calculus">Calculus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Derivatives">Derivatives</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+              
+                </ul>
+                <form class="d-flex input-group w-auto">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text text-white border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+      </div>
+     
+    </div>
+    
+    <div class="row">
+      <div class="col-3">
+     <!-- start  my own sidebar -->
+
+     <ul class="mySide">
+      
+       <li><a href="#linear algebra">linear algebra</a></li>
+       <li><a href="#vector">vector </a></li>
+       <li><a href="#vector space mathematics"> vector space </a> </li>
+       <li><a href="#matrix">  matrix</a></li>
+       <li><a href="#linear transformation">linear transformation</a></li>
+       <li><a href=""></a></li>
+       
+     </ul>
+
+
+
+
+     <!--end  my own sidebar -->
+  
+      </div>    
+    <main class="col-9">
+        <div class="one ">
+            <h2>math for data science</h2>
+            <img src="myImg/13linear algebera/linear algeber.png" alt="" class="xximg">
+  
+              <h1 id="linear algebra">linear algebra</h1>, mathematical discipline that deals with vectors and matrices and, more generally, with vector spaces and linear transformations.<br> Unlike other parts of mathematics that are frequently invigorated by new ideas and unsolved problems, linear algebra is very well understood.<br> Its value lies in its many applications, from mathematical physics to modern algebra and coding theory.
+              <h1>Vectors and vector spaces</h1>
+              Linear algebra usually starts with the study of vectors, which are understood as quantities having both magnitude and direction.<br> Vectors lend themselves readily to physical applications. For example, consider a solid object that is free to move in any direction. When two forces act at the same time on this object, they produce a combined effect that is the same as a single force. <br>To picture this, represent the two forces v and w as arrows; the direction of each arrow gives the direction of the force, and its length gives the magnitude of the force. <br>The single force that results from combining v and w is called their sum, written v + w. In the figure <img src="myImg/13linear algebera/" alt="">, v + w corresponds to the diagonal of the parallelogram formed from adjacent sides represented by v and w.
+              <p>Vectors are often expressed using coordinates. For example, in two dimensions a vector can be defined by a pair of coordinates (a1, a2) describing an arrow going from the origin (0, 0) to the point (a1, a2).<br> If one vector is (a1, a2) and another is (b1, b2), then their sum is (a1 + b1, a2 + b2); this gives the same result as the parallelogram (see the figure <img src="myImg/12 vector/vector-addition-Vectors-coordinates-sum-tails-origin.webp" alt=""> ). <br>In three dimensions a vector is expressed using three coordinates (a1, a2, a3), and this idea extends to any number of dimensions.</p>
+              <p>Representing vectors as arrows in two or three dimensions is a starting point, but linear algebra has been applied in contexts where this is no longer appropriate. </p>For example, in some types of differential equations the sum of two solutions gives a third solution, and any constant multiple of a solution is also a solution. In such cases the solutions can be treated as vectors, and the set of solutions is a vector space in the following sense. In a vector space any two vectors can be added together to give another vector, and vectors can be multiplied by numbers to give “shorter” or “longer” vectors.</p> The numbers are called scalars because in early examples they were ordinary numbers that altered the scale, or length, of a vector. For example, if v is a vector and 2 is a scalar, then 2v is a vector in the same direction as v but twice as long.</p> In many modern applications of linear algebra, scalars are no longer ordinary real numbers, but the important thing is that they can be combined among themselves by addition, subtraction, multiplication, and division. For example, the scalars may be complex numbers, or they may be elements of a finite field such as the field having only the two elements 0 and 1, where 1 + 1 = 0.</p> The coordinates of a vector are scalars, and when these scalars are from the field of two elements, each coordinate is 0 or 1, so each vector can be viewed as a particular sequence of 0s and 1s. This is very useful in digital processing, where such sequences are used to encode and transmit data.</p>
+              <h1>Linear transformations and matrices</h1>
+              <p>Vector spaces are one of the two main ingredients of linear algebra, the other being linear transformations (or “operators” in the parlance of physicists). Linear transformations are functions that send, or “map,” one vector to another vector.</p>
+              <p>The simplest example of a linear transformation sends each vector to c times itself, where c is some constant. Thus, every vector remains in the same direction, but all lengths are multiplied by c. Another example is a rotation, which leaves all lengths the same but alters the directions of the vectors</p>
+              <p>Linear refers to the fact that the transformation preserves vector addition and scalar multiplication. This means that if T is a linear transformation sending a vector v to T(v), then for any vectors v and w, and any scalar c, the transformation must satisfy the properties T(v + w) = T(v) + T(w) and T(cv) = cT(v).</p>
+              <p>When doing computations, linear transformations are treated as matrices. A matrix is a rectangular arrangement of scalars, and two matrices can be added or multiplied as shown in the table</p>  <img src="myImg/linear algebera/Matrix-rules.jpg" alt="">
+              <p>The product of two matrices shows the result of doing one transformation followed by another (from right to left), and if the transformations are done in reverse order the result is usually different.</p>
+              <p>Thus, the product of two matrices depends on the order of multiplication; if S and T are square matrices (matrices with the same number of rows as columns) of the same size, then ST and TS are rarely equal.</p>
+              <p>The matrix for a given transformation is found using coordinates. For example, in two dimensions a linear transformation T can be completely determined simply by knowing its effect on any two vectors v and w that have different directions. Their transformations T(v) and T(w) are given by two coordinates; therefore, only four coordinates, two for T(v) and two for T(w), are needed to specify T.</p>
+              <p>These four coordinates are arranged in a 2-by-2 matrix. In three dimensions three vectors u, v, and w are needed, and to specify T(u), T(v), and T(w) one needs three coordinates for each. This results in a 3-by-3 matrix.</p>
+            
+          
+          </div>
+            
+           <div class="two">
+            
+            <h1 id="vector" >vector</h1>
+            
+            <div class="note">
+            <h4>  A Vector </h4>
+            is something that has two and only two defining characteristics. <br>
+              1.Magnitude <br>
+              2.Direction</div>
+             <h4> vector</h4>,
+                <p> in mathematics, a quantity that has both magnitude and direction but not position. Examples of such quantities are velocity and acceleration.
+             <br> In their modern form, vectors appeared late in the 19th century when Josiah Willard Gibbs and Oliver Heaviside (of the United States and Britain, respectively) independently developed vector analysis to express the new laws of electromagnetism discovered by the Scottish physicist James Clerk Maxwell. <br> Since that time, vectors have become essential in physics, mechanics, electrical engineering, and other sciences to describe forces mathematically.</p>
+            <p>Vectors may be visualized as directed line segments whose lengths are their magnitudes. Since only the magnitude and direction of a vector matter, any directed segment may be replaced by one of the same length and direction but beginning at another point, such as the origin of a coordinate system</p>
+            <p>Vectors are usually indicated by a boldface letter, such as v. A vector’s magnitude, or length, is indicated by |v|, or v, which represents a one-dimensional quantity (such as an ordinary number) known as a scalar.</p>
+            <p> Multiplying a vector by a scalar changes the vector’s length but not its direction, except that multiplying by a negative number will reverse the direction of the vector’s arrow. For example, multiplying a vector by 1/2 will result in a vector half as long in the same direction, while multiplying a vector by −2 will result in a vector twice as long but pointed in the opposite direction.</p>
+          <p>Two vectors can be added or subtracted. For example, to add or subtract vectors v and w graphically (see the diagram  <img src="myImg/12 vector/Vector-parallelogram-tails-method-subtraction-addition-vectors.webp" alt=""> ) <br>, move each to the origin and complete the parallelogram formed by the two vectors; v + w is then one diagonal vector of the parallelogram, and v − w is the other diagonal vector.</p>
+          <p>There are two different ways of multiplying two vectors together. The cross, or vector, product results in another vector that is denoted by v × w. The cross product magnitude is given by |v × w| = vw sin θ, where θ is the smaller angle between the vectors (with their “tails” placed together). The direction of v × w is perpendicular to both v and w, and its direction can be visualized with the right-hand rule, as shown in the figure. <img src="myImg/12 vector/hand-rule-product-ordinary-vectors-scalar-sin.webp" alt=""></p>
+          <p> The cross product is frequently used to obtain a “normal” (a line perpendicular) to a surface at some point, and it occurs in the calculation of torque and the magnetic force on a moving charged particle.</p>
+          <p>The other way of multiplying two vectors together is called a dot product, or sometimes a scalar product because it results in a scalar. The dot product is given by v ∙ w = vw cos θ, where θ is the smaller angle between the vectors. The dot product is used to find the angle between two vectors. (Note that the dot product is zero when the vectors are perpendicular.) <br> A typical physical application is to find the work W performed by a constant force F acting on a moving object d; the work is given by W = Fd cos θ.</p>
+          
+          
+          
+          
+          
+          
+          <img src="myImg/12 vector/vector traits.png" alt="" class="xximg">
+          <div class="note"><h4>How to express a vector as an ordered pair </h4>
+              <p>Follow these steps: </p>
+              
+             1. Align the 'tail' of the vector with the origin. <br>
+             2. Determine the x and y coordinates where the head or 'pointy end' of the vector lands. Typically, for this you need to use sine and cosine ratios.</div>
+              <img src="myImg/12 vector/how-to-vector-as-ordered-pair.gif" alt="" class="IMG">
+              <img src="myImg/12 vector/vector ex.png" alt="" class="xximg">
+          
+              <p><h4>The resultant vector</h4> is the vector that 'results' from adding two or more vectors together. There are a two different ways to calculate the resultant vector.
+          
+                  Methods for calculating a Resultant Vector: <br>
+                  The head to tail method to calculate a resultant which involves lining up the head of the one vector with the tail of the other. <br>
+                  The parallelogram method to calculate resultant vector. This method involves properties of parallelograms but, in the end, boils down to a simple formula.</p>
+                  <img src="myImg/12 vector/restultant vector.png" alt="" class="IMG">
+                  <div class="note"><h4>The head to tail method </h4>is way to find the resultant vector. The steps are quite straight forward. The head to tail method considers the head of a vector to be the end with the arrow, or the 'pointy end'. The tail of the vector is where the vector begins.</div>
+                  <p>1.Place the two vectors next to each other such that the head of the one vector is touching the tail of the other vector. <br>
+                      2.Draw the resultant vector by starting where the tail of first vector is to the head of second vector</p>
+                      <h4>Steps for Head to Tail Method</h4>
+                      <img src="myImg/12 vector/head-to-tail-method-animation (1).gif" alt="" class="IMG">
+                      <h4>Parallelogram Method to Calculate Resultant  <br>طريقة متوازي الأضلاع لحساب الناتج</h4>
+                      <p>Before tackling the parallelogram method for solving resultant vectors, you should be comfortable with the following topics. <br>
+          
+                          SOHCAHTOA (basic sine, cosine, tangent) <br>
+                          Law of Cosines <br>
+                          Law of Sines <br>
+                          The Following Properties of Parallelograms <br>
+                          Opposite Sides of Parallelograms are Congruent <br>
+                          Opposite Angles of Parallelograms are Congruent</p>
+
+
+           </div> 
+            
+            
+          
+      <div class="three">
+        <h1 id="vector space mathematics">vector space mathematics</h1>
+     <h4>vector space</h4> <p>, a set of multidimensional quantities, known as vectors, together with a set of one-dimensional quantities, known as scalars, such that vectors can be added together and vectors can be multiplied by scalars while preserving the ordinary arithmetic properties (associativity, commutativity, distributivity, and so forth). Vector spaces are fundamental to linear algebra and appear throughout mathematics and physics.</p> 
+     <p>The idea of a vector space developed from the notion of ordinary two- and three-dimensional spaces as collections of vectors {u, v, w, …} with an associated field of real numbers {a, b, c, …}. Vector spaces as abstract algebraic entities were first defined by the Italian mathematician Giuseppe Peano in 1888. Peano called his vector spaces “linear systems” because he correctly saw that one can obtain any vector in the space from a linear combination of finitely many vectors and scalars—av + bw + … + cz. A set of vectors that can generate every vector in the space through such linear combinations is known as a spanning set.</p> 
+     <p>The dimension of a vector space is the number of vectors in the smallest spanning set. (For example, the unit vector in the x-direction together with the unit vector in the y-direction suffice to generate any vector in the two-dimensional Euclidean plane when combined with the real numbers.)</p> 
+     <p>The linearity of vector spaces has made these abstract objects important in diverse areas such as statistics, physics, and economics, where the vectors may indicate probabilities, forces, or investment strategies and where the vector space includes all allowable states</p>                        
+                                
+    </div>
+                                        
+     <div class="four">
+         <h1 id="matrix">matrix</h1>
+         <p>matrix, a set of numbers arranged in rows and columns so as to form a <span>rectangular array</span>. The numbers are called the <span>elements, or entries</span>, of the matrix</p>
+         <p>Matrices have wide applications in engineering, physics, economics, and statistics as well as in various branches of mathematics. Matrices also have important applications in computer graphics, where they have been used to represent rotations and other transformations of images.</p>
+         <p>Historically, it was not the matrix but a certain number associated with a square array of numbers called the determinant that was first recognized. Only gradually did the idea of the matrix as an algebraic entity emerge. </p>
+         <p>The term matrix was introduced by the 19th-century English mathematician James Sylvester, but it was his friend the mathematician Arthur Cayley who developed the algebraic aspect of matrices in two papers in the 1850s.</p>
+         <p>Cayley first applied them to the study of systems of linear equations, where they are still very useful.</p>
+         <p>They are also important because, as Cayley recognized, certain sets of matrices form algebraic systems in which many of the ordinary laws of arithmetic (e.g., the associative and distributive laws) are valid but in which other laws (e.g., the commutative law) are not valid.</p>
+         <p>If there are m rows and n columns, the matrix is said to be an “m by n” matrix, written “m × n.” For example, <img src="myImg/13linear algebera/Matrix.jpg" alt="">
+            Matrix.
+            
+            is a 2 × 3 matrix.</p>
+<p>A matrix with n rows and n columns is called a square matrix of order n.</p>
+<p>An ordinary number can be regarded as a 1 × 1 matrix; thus, 3 can be thought of as the matrix [3].</p>
+<p>A matrix with only one row and n columns is called a row vector, and a matrix with only one column and n rows is called a column vector.</p>
+<p>In a common notation, a capital letter denotes a matrix, and the corresponding small letter with a double subscript describes an element of the matrix.</p>
+<p>Thus, aij is the element in the ith row and jth column of the matrix A. If A is the 2 × 3 matrix shown above, then a11 = 1, a12 = 3, a13 = 8, a21 = 2, a22 = −4, and a23 = 5</p>
+<p>Under certain conditions, matrices can be added and multiplied as individual entities, giving rise to important mathematical systems known as matrix algebras.</p>
+<p>Matrices occur naturally in systems of simultaneous equations.</p>
+<p>In the following system for the unknowns x and y,  <img  src="myImg/13linear algebera/ex1.png" alt=""> is a matrix whose elements are the coefficients of the unknowns .The solution of the equations depends entirely on these numbers and on their particular arrangement. If 3 and 4 were interchanged, the solution would not be the same.
+</p>
+ <p>Two matrices A and B are equal to one another if they possess the same number of rows and the same number of columns and if aij = bij for each i and each j.</p>   
+ <p>If A and B are two m × n matrices, their sum S = A + B is the m × n matrix whose elements sij = aij + bij. That is, each element of S is equal to the sum of the elements in the corresponding positions of A and B.</p>
+ <p>A matrix A can be multiplied by an ordinary number c, which is called a scalar. The product is denoted by cA or Ac and is the matrix whose elements are caij.</p>
+ <p>The multiplication of a matrix A by a matrix B to yield a matrix C is defined only when the number of columns of the first matrix A equals the number of rows of the second matrix B.</p>
+ <p>To determine the element cij, which is in the ith row and jth column of the product, the first element in the ith row of A is multiplied by the first element in the jth column of B, the second element in the row by the second element in the column, and so on until the last element in the row is multiplied by the last element of the column; the sum of all these products gives the element cij. In symbols, for the case where A has m columns and B has m rows, <img class="" src="myImg/13linear algebera/symbol.png" alt="">The matrix C has as many rows as A and as many columns as B.
+</p>
+<p>Unlike the multiplication of ordinary numbers a and b, in which ab always equals ba, the multiplication of matrices A and B is not commutative. It is, however, associative and distributive over addition.</p>
+<p>That is, when the operations are possible, the following equations always hold true: A(BC) = (AB)C, A(B + C) = AB + AC, and (B + C)A = BA + CA. If the 2 × 2 matrix A whose rows are (2, 3) and (4, 5) is multiplied by itself, then the product, usually written A2, has rows (16, 21) and (28, 37).</p>
+<p>A matrix O with all its elements 0 is called a zero, or null, matrix.</p>
+<p> A square matrix A with 1s on the main diagonal (upper left to lower right) and 0s everywhere else is called an identity, or unit, matrix. It is denoted by I or In to show that its order is n.</p>
+<p> If B is any square matrix and I and O are the unit and zero matrices of the same order, it is always true that B + O = O + B = B and BI = IB = B. Hence O and I behave like the 0 and 1 of ordinary arithmetic</p>
+<p> (In fact, ordinary arithmetic is the special case of matrix arithmetic in which all matrices are 1 × 1.)</p>
+<p>A square matrix A in which the elements aij are nonzero only when i = j is called a diagonal matrix. Diagonal matrices have the special property that multiplication of them is commutative; that is, for two diagonal matrices A and B, AB = BA. <br>The trace of a square matrix is the sum of the elements on the main diagonal.</p>
+<p>Associated with each square matrix A is a number that is known as the determinant of A, denoted det A.
+    For example, for the 2 × 2 matrix  <img src="myImg/13linear algebera/matrix A.png" alt=""> det A = ad − bc. A square matrix B is called nonsingular if det B ≠ 0. <br> If B is nonsingular, there is a matrix called the inverse of B, denoted B<sup>−1</sup>, such that BB<sup>−1</sup> = B<sup>−1</sup>B = I.
+</p>
+<p>The equation AX = B, in which A and B are known matrices and X is an unknown matrix, can be solved uniquely if A is a nonsingular matrix, for then A<sup>−1</sup> exists and both sides of the equation can be multiplied on the left by it: A<sup>−1</sup>(AX) = A<sup>−1</sup>B. Now A<sup>−1</sup>(AX) = (A<sup>−1</sup>A)X = IX = X; hence the solution is X = A<sup>−1</sup>B</p>
+<p>A system of m linear equations in n unknowns can always be expressed as a matrix equation AX = B in which A is the m × n matrix of the coefficients of the unknowns, X is the n × 1 matrix of the unknowns, and B is the n × 1 matrix containing the numbers on the right-hand side of the equation.
+
+</p>
+<p>A problem of great significance in many branches of science is the following: given a square matrix A of order n, find the n × 1 matrix X, called an n-dimensional vector, such that AX = cX.
+    Here c is a number called an <span>eigenvalue</span>, and X is called an <span>eigenvector</span>
+    The existence of an eigenvector X with eigenvalue c means that a certain transformation of space associated with the matrix A stretches space in the direction of the vector X by the factor c..
+</p>
+     </div>         
+              
+    <div class="five">
+     <h1 id="linear transformation">linear transformation</h1>   
+    <p>linear transformation, in mathematics, a rule for changing one geometric figure (or matrix or vector) into another, using a formula with a specified format.</p>
+    <p>The format must be a linear combination, in which the original components (e.g., the x and y coordinates of each point of the original figure) are changed via the formula ax + by to produce the coordinates of the transformed figure.</p>
+    <p>Examples include flipping the figure over the x or y axis, stretching or compressing it, and rotating it. Some such transformations have an inverse, which undoes their effect.</p>
+   <h4>Image of a transformation</h4> 
+   <p>Transformations change shapes. <br>
+
+    In Math , we have a word for the shape before this change and word for the shape after the transformation. <br>
+    
+    The image of a transformation is the shape after the transformation. <br>
+    
+    The preimage of a transformation is the shape before the transformation.</p>
+    <img src="myImg/13linear algebera/linear transformation/reflection-image-pre-image-animation.gif" alt="">
+    <h4>What is an isometry?</h4>
+    <img class="IMG" src="myImg/13linear algebera/linear transformation/isometry.png" alt="">
+   
+    <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">Diagrams of Isometries :Diagram 1</h5>
+            <img src="myImg/13linear algebera/linear transformation/right-triangle-over-y-axis-as-isometry-animation-322x222.gif" class="card-img-top" alt="Fissure in Sandstone"/>
+         
+          <p class="card-text">In the diagram below, both the image and the preimage of △ABC have the same dimensions, showing that reflections are isometries</p>
+        </div>
+        <div class="card">
+            <h5 class="card-title">Diagrams of Isometries :Diagram 2</h5>
+            <img src="myImg/13linear algebera/linear transformation/triangle-translated-isometry-animation-gif.gif" class="card-img-top" alt="Fissure in Sandstone"/>
+            <div class="card-body">
+
+              <p class="card-text">Again in this diagram, both the image and the preimage of △ABC have the same dimensions, showing that translations are isometries.</p>
+              
+            </div>
+          </div>
+      </div>
+    </div>                  
+
+    <div class="card">
+        <h5 class="card-title">Diagrams of Isometries :Diagram 3</h5>
+        <img src="myImg/13linear algebera/linear transformation/triangle-rotated-90-degrees-as-isometry-animation.gif" class="card-img-top" alt="Fissure in Sandstone"/>
+        <div class="card-body">
+         
+          <p class="card-text">Lastly, both the image and the preimage of △ABC have the same dimensions, showing that rotations are isometries.</p>
+        
+        </div>
+      </div>
+  <h4>Direct Isometry</h4>
+  <img src="myImg/13linear algebera/linear transformation/direct isometry.png" alt="" class="IMG">
+<p>The animations below show that rotations and translations are direct isometries because the orientation as well as the distance is preserved.</p>
+<div class="card">
+    <h5 class="card-title">Direct Isometry Diagram4 Rotation Example</h5>
+    <img src="myImg/13linear algebera/linear transformation/triangle-rotated-90-degrees-as-direct-isometry-as-animated-gif-optimized.gif" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      
+      <p class="card-text">In the animation below, the vetices of △ABC are in a clockwise order or orientation, and the same is true for the image after the rotation..</p>
+     
+    </div>
+  </div>
+  <div class="card">
+    <h5 class="card-title">Direct Isometry Diagram5 
+        Translation Example</h5>
+    <img src="myImg/13linear algebera/linear transformation/triangle-translated-as-direct-isometry-as-animated-gif.gif" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      
+      <p class="card-text">Just like the pior animation, the vetices of △ABC are in a clockwise order or orientation, and the same is true for the image after the translation.</p>
+     
+    </div>
+
+</div>
+<h4>What is an opposite isometry?</h4>
+<img src="myImg/13linear algebera/linear transformation/opposite isometry.png" alt="" class="IMG">
+<div class="card">
+    <h5 class="card-title">Diagram 6
+        Reflection Example</h5>
+    <img src="myImg/13linear algebera/linear transformation/triangle-reflected-x-axis-as-opposite-isometry-as-animated-gif-v2.gif" class="card-img-top" alt="Fissure in Sandstone"/>
+    <div class="card-body">
+      
+      <p class="card-text">The animation below shows that reflections are opposite isometries because the orientation is reversed while the distance is preserved..</p>
+     
+    </div>
+<h4>Reflect a Point <br>
+    Across x axis, y axis and other lines</h4>
+    <p>A reflection is a kind of transformation. Conceptually, a reflection is basically a 'flip' of a shape over the line of reflection.
+
+        Reflections are opposite isometries, something we will look below.</p>
+        <p>Reflections are isometries . As you can see in diagram 1 below, △ABC is reflected over the y-axis to its image △A′B′C′. And the distance between each of the points on the preimage is maintained in its image</p>
+        <img src="myImg/13linear algebera/linear transformation/right-triangle-over-y-axis-as-isometry-animation-322x222.gif" alt="">
+        <img src="myImg/13linear algebera/linear transformation/reflexion.png" alt="">
+        <img src="myImg/13linear algebera/linear transformation/reflection.png" alt="" class="IMG">
+        <img src="myImg/13linear algebera/linear transformation/reflection formula.png" alt="" class="xximg">
+   <h4>Reflections Applet</h4>
+        <iframe width="100%" height="1000px" src="https://www.mathwarehouse.com/geometry/interactive_applets/iframe.php?file=reflections-in-math&cp0x=240&cp1x=420&cp2x=420&cp3x=120&cp0y=120&cp1y=120&cp2y=420&cp3y=420&axis=yaxis&shape=point&m=1&c=1&auto=1&between_lines=1&check-undefined=1&check-attract-points=0" frameborder="0"></iframe>
+   <h4>How to Translate a Point>>>>></h4>
+        <h4>Rotations of points, shapes   ,,,,,,</h4>
+
+    </main>
+   
+ 
+  
+             <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+  
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+      const sidenavInstance = mdb.Sidenav.getInstance(document.getElementById('sidenav-1'));
+
+sidenavInstance.update({ color: 'warning'});
+    </script>
+  </body>
+</html>

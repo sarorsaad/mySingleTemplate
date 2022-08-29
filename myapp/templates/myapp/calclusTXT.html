@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Calculus</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="myCSS/index.css">
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="row">
+      <div class="col-12">
+      
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-info fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img  class="nav-img "  src="myImg/logo1.png" alt="">
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-mdb-toggle="collapse"
+                data-mdb-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#Calculus">Calculus</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Derivatives">Derivatives</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                  </li>
+              
+                </ul>
+                <form class="d-flex input-group w-auto">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="Search"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+                  />
+                  <span class="input-group-text text-white border-0" id="search-addon">
+                    <i class="fas fa-search"></i>
+                  </span>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+      </div>
+     
+    </div>
+    
+    <div class="row">
+      <div class="col-3">
+     <!-- start  my own sidebar -->
+
+     <ul class="mySide">
+      <li><a href="#cal">calculus </a></li>
+       <li><a href="#Limit"> limits</a></li>
+       <li><a href="#Derivatives"> Derivative</a> </li>
+       <li><a href="">  integral</a></li>
+       <li><a href=""></a></li>
+       <li><a href=""></a></li>
+       
+     </ul>
+
+
+
+
+     <!--end  my own sidebar -->
+  
+      </div>    
+    
+      <div class="col-9  ">
+
+        <main>
+          <div class="one">
+            <h1 id="cal">What is Calculus</h1>
+            <h2>Motivation</h2>
+            <p>Suppose you are enjoying a ride in a small airplane, and then you notice the altimeter reads only 100 feet above ground! Should you be worried?
+              <img src="myImg/1 calclus/altimeter (1).png" alt="">
+              <p>Well...maybe. If the plane’s altitude is increasing, probably not</p>
+              <img src="myImg/1 calclus/plane_up.png" alt="">
+              <img src="myImg/1 calclus/plane_down.png" alt="">
+              <p>On the other hand, what if the altimeter is showing 100 feet above ground, and your altitude is decreasing! Is that reason enough to worry?
+          
+                Well...maybe. Even if the plane’s altitude is decreasing, perhaps it is sloo-o-wly descending. Perhaps the pilot is getting ready to land. No need to worry.
+                
+                The point is, the plane's altitude alone isn’t enough information to determine whether or not there is a problem. But what does this have to do with calculus?
+                
+                calculus is about measuring and describing change.</p>
+                <img  class="IMG" src="myImg/1 calclus/reinmann-sum-animation.gif" alt="">
+                <p>In the scenario described above, knowing the plane's altitude at a particular moment in time, is equivalent to knowing a single point on the graph of a function</p>
+                <img src="myImg/1 calclus/function-single-point.png" alt="">
+                <p>But that isn’t the whole story, is it? There’s the question of what comes next. Is the function going to increase? Or decrease? Even then, is the increase (or decrease) going to happen slowly? Or quickly? Will the function continue in this direction forever, or will it change direction? (See Figure 1)
+                <img class="IMG" src="myImg/1 calclus/function-increasing-decreasing.png"  alt="">
+             <p>Figure 1: There’s more to the story than just function value. We care about direction, and how the function moves in that direction.
+          
+              These questions cannot be handled by algebra alone. We need a more powerful set of tools, and those tools come bundled in a package called Calculus</p>
+              <h3>The Two Parts of Calculus</h3>
+              Calculus comes in two main parts. <br>
+          
+          Differential Calculus: which is based on rates of change (slopes), <br>
+          Integral Calculus: which is based on adding up the effects of lots of small changes. <br>
+          Additionally, each part of calculus has two main interpretations, one geometric and the other physical. (See below <br>
+          <img class="IMG"src="myImg/1 calclus/interpretation.png" alt="">
+          <h3>Differential Calculus</h3>
+          <h4>Slopes </h4><br>
+          The slope of a line is well understood. It says that, no matter which two points you use, the ratio rise/run will always be the same.
+          
+          But that’s not the case with a curve! (See Figure 2) <br>
+          <img src="myImg/1 calclus/linear-rise-run.png" alt="">
+          <img src="myImg/1 calclus/curve-rise-run1.png" alt=""> <br>
+          <p>Figure 2: The rise/run ratio is the same everywhere for a line, but that’s not true for a curve</p> <hr>
+          <p>Slope of a Curve <br>
+            We deal with this changing rise-to-run ratio on a curve by defining it at only one point at a time. To do that, we use the slope of the line that is tangent to the curve at that point (see Figure 3). <br>
+            
+            Differential calculus gives us the tools to find the slope of that tangent line.</p>
+            <img src="myImg/1 calclus/curve-tangent-line.png" alt="">
+            <p>Figure 3: The slope of the line that is tangent to the curve gives us the slope of the curve at that point</p>
+            <hr>
+            <p><h4>Velocities </h4><br>
+              For a physical understanding of Differential Calculus, think about traveling 120 miles in a car over a period of two hours, say from 1pm to 3pm.</p>
+              <img class="IMG"src="myImg/1 calclus/car-driving-1-to-3.png" alt="">
+              <p>Well, 120 miles in 2 hours sounds like 60 miles per hour. Now, did you travel 60 miles per hour the entire time? Maybe. But you might have driven 65 miles per hour for a while, then had to slow down for a while (because of traffic) to only 50 miles per hour. Then perhaps you got to speed back up again. So we say that your average speed was 60 miles per hour for the trip. <br>
+
+                But what was your exact speed at, say 2pm? Now, average speed is calculated as</p>
+                <img  class="IMG"src="myImg/1 calclus/average of speed.png" alt="">
+                so we could figure out what our average speed was between 2:00 and 2:30,
+
+or between 2:00 and 2:15, <br>
+or between 2:00 and 2:05,  <br>
+or between 2:00 and 2:01,  <br>
+or between 2:00 and 30 seconds later,<br>
+or between 2:00 and 1 second later, <br>
+or...
+In each case, we can calculate a change in time and a change in position, but these are average speeds<br>
+
+How fast were you going at exactly 2:00? How do we calculate a speed at a single instant in time? There hasn’t been any change in time or any change in distance. And yet, you were traveling at 2:00, so you DID have a speed.<br>
+
+In order to answer this question, we need to have the tools of differential calculus.<br>
+
+Quick Summary: Both slopes and speeds are rates of change, and Differential Calculus is focused entirely on rates of change<br>
+<hr>
+<hr>
+<hr>
+<h2>Integral Calculus</h2>
+<p><h4>Areas </h4><br>
+  Finding the area of a rectangle is easy, its just A=(length)(width). <br>
+  
+  Likewise, the area of a triangle is easy, its just A=1/2(base)(height).</p>
+  <img class="IMG"src="myImg/1 calclus/area-rectanlge-triangle.png" alt="">
+  <p>These two formulas allow us to calculate the area of figures that have straight edges, by dividing them into small triangles and rectangles:</p>
+  <img class="IMG" src="myImg/1 calclus/area-odd-shape.png" alt="">
+  <p>But if even one side of the figure is a curve..</p>
+  <img src="myImg/1 calclus/area-one-side-curvey.png" alt="">
+
+<p>suddenly calculating the area isn’t possible without the tools provided by integral calculus.</p>
+<p><h4>Net Change</h4>
+  Consider a dam holding back a huge volume of water. That water pushes against the dam face with a great deal of force.</p>
+  <img src="myImg/1 calclus/water-dam-single-force.png" alt="">
+  <p>But the force isn’t the same everywhere on the face of the dam. The deepest parts of the water exert more force on the dam than the surface of the water.</p>
+  <img src="myImg/1 calclus/water-dam-many-forces.png" alt="">
+  <p>So, how much total force does the water exert on the dam face? Integral calculus gives us the tools we need to break the forces into very small1 pieces that are easy to calculate, and then add them all up to give us the exact value of the total force! <br>
+
+    Quick Summary: Integral Calculus calculates the effects of lots of small changes (like the changes in depth) and then adds all the effects together to give the total effect.</p>
+    <hr>
+    <hr>
+    <hr>
+    <h2>Unifying Idea</h2>
+    <p>Both Differential and Integral Calculus are based on a single idea called “the limit.”</p>
+    <img src="myImg/1 calclus/function-with-hole.png" alt="">
+    <p>Figure 4: The function isn’t defined at x=3.</p>
+    <p>For the function shown above, what is the y-value when x=3? That is, what is the value of f(3)? The hole in the graph indicates that f(3) is undefined, so there isn’t a function value for x=3. <br>
+
+      And yet, we can see by the graph that the function value would be 2 if we could somehow plug that hole in the graph. We can get around this “undefined” error by asking a slightly different question: <br>
+      
+      If x is allowed to approach 3, getting closer and closer,<sup>2</sup> what value does y approach? <br>
+      
+      <div class="note">
+        1Infinitesimally small! <br>
+        2But not actually becoming equal to 3 
+      </div> 
+      <img src="myImg/1 calclus/limit-from-left.png" alt="">
+      <img src="myImg/1 calclus/limit-from-right.png" alt="">
+      <p>Whether we look at x-values to the left of 3, or to the right of 3, we can see that x-values that are closer to 3 are associated with y-values that are closer to 2. <br>
+
+        This is known as finding the limit of the function, and it allows us to identify the location of that hole without getting an “undefined” error. 
+        
+       <h4> Quick Summary:</h4>
+        
+        The limit of a function answers the question “Where is the y-value going as x approaches this particular number?”</p>
+        <div class="note">
+          <h3>Summary: What is calculus?</h3>
+Calculus is an area of math that deals with change. <br>
+It has two main parts: Differential and Integral Calculus. <br>
+Differential Calculus is based on rates of change (slopes and speed). <br>
+Integral Calculus is based on accumulation of values (areas and accumulated change). <br>
+Both parts of calculus are based on the concept of the limit. <br>
+Both parts of calculus provide tools for answering questions that algebra alone cannot
+        </div>
+          
+ <div class="end"> THE END</div>
+  
+             <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+             %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+             $$$$$$$$$$$$$$$$$$$$$ -->
+ 
+  <div class="two">
+   <h1 id="Limit">What is a Limit?</h1>
+  <h2>Remember</h2>
+  <img class="IMG" src="myImg/2 limits/limits-calculus-relationship.png" alt="">
+  <p>The limit of a function is the value that f(x) gets closer to as x approaches some number.</p>
+  <h3>Examples</h3>
+  <p>Example 1 <br>
+    Let's look at the graph of f(x)=4/3x−4, and examine points where x is "close" to x=6. We'll start with points where x is less than 6.</p>
+    <img src="myImg/2 limits/limit-from-the-left.gif" alt="">
+    <p>Notice that as the x-values get closer to 6, the function values appear to be getting closer to y=4. Now, lets look at points on the function where x is larger than 6.</p>
+    <img src="myImg/2 limits/limit-from-the-right-animation.gif" alt="">
+    <img src="myImg/2 limits/points plotted.png" alt="">
+    <p>
+      As before, the closer we got to x=6, the closer the function got to y=4.</p>
+      <img src="myImg/2 limits/limit-from-both-sides.png" alt="">
+      <p>Of course, since f(6)=4, this might not seem surprising. Nevertheless, this is the idea of a limit, and it can be summed up this way: <br>
+
+        As x gets closer to a particular number, what does the function get close to?</p>
+        <h2>Limit Notation</h2>
+        <p>
+          Mathematicians have a special notation to indicate they are working with limit values. For example, the answer to Example 1 would be written like this:
+          <img  class="IMG" src="myImg/2 limits/limit-notation-explanation.png" alt="">
+          
+          <p>Example 2 <br>
+            Suppose f(x)=<span>sinx/x</span>. What is limx→0f(x)=?
+            
+            It is tempting to just plug in x = 0 to try to get an answer, but if we try</p>
+            <div class="noteIN">  <span>f(0)=sin0/0 </span> is undefined! (Division by zero)</div>
+            <p>Even though the function is undefined when x = 0, we can still answer the question using the limit. <br>
+
+              The following two tables will help us understand what happens near x = 0.</p>
+              <img   class="IMG"src="myImg/2 limits/tables.png" alt="">
+              <p>In both tables, the closer x gets to 0, the closer the function seems to be getting to 1. Now, let’s peek at the graph of the function, just to verify it visually.</p>
+              <img class="IMG" src="myImg/2 limits/graph-of-sinx-over-x.png" alt="">
+              <img src="myImg/2 limits/funnction apperance.png" alt="" class="xximg">
+              <h2>A Problem with Our Precision
+                مشكلة في الدقة لدينا</h2>
+                <img src="myImg/2 limits/precession.png" alt="" class="xximg">
+                <img class="IMG" src="myImg/2 limits/precession1.png" alt="">
+                <h2>Basic Definition of Limit</h2>
+                <p>If f(x) gets really, really, really close to L when x gets really, really, really y close to a, then we call L the limit of the  f</p>
+                <img class="IMG" src="myImg/2 limits/limit definition.png" alt="">
+                <p>Example 1: The Limit Exists</p>
+                <img src="myImg/2 limits/limit-exists-example-1.png" alt="">
+                <p>Whether x approaches a from the left or from the right , the function approaches L .</p>
+                <img src="myImg/2 limits/independance fail.png" alt="" class="xximg">
+                <img src="myImg/2 limits/no finite value.png" alt="" class="xximg">
+                <h4>When the limit does not exist</h4>
+                <img class="IMG" src="myImg/2 limits/limit-does-not-exist-demonstration-math.gif" alt="">
+                <div class="note">
+               <h4>   Remember</h4>
+This approach must be independent of direction <br>
+The value that f(x) approaches must be finite. In our examples, the finite value was always called L. On the other hand, Example 3 illustrates a situation that does not satisfy this requirement of the basic definition of a limit because in example 3 there is no finite value that f(x) approaches.
+                </div>
+                <h3>How to Estimate Limit Values with Graphs</h3>
+                <h4>Quick Summary <br>
+                 1- When working with graphs, the best we can do is estimate the value of limits. <br>
+                  2-If the one-sided limits seem to be equal, we use their value as the value of the limit.</h4>
+                  <P>Example 1 <br>
+                    Use the graph to estimate  <span>lim/x→4   f(x)</span></P>
+                  <img src="myImg/2 limits/limit-graph-example-1.png" alt="" >
+                  <h4>Step 1</h4>
+                  <hr>
+               <p>Examine the limit from the left.</p>
+               <img src="myImg/2 limits/limit-from-left-example-1.png" alt="">
+               <h4>Step 2</h4>
+               <hr>
+               <p>Examine the limit from the right.</p>
+               <img src="myImg/2 limits/limit-from-right-example-1.png" alt="">
+               <h4>Step 3</h4>  <hr>
+               <p>The one-sided limits are the same, so the limit exists.
+
+                Answer: <span> lim/x→4     f(x)≈5</span>
+              </p>
+              <p>Example 2 ......</p>
+              <p>Example 3 ........</p>
+              <p>Practice Problems.......</p>
+
+              <h2>Limit Laws</h2>
+              Quick Summary <br>
+The limit laws are simple formulas that help us evaluate limits precisely.
+<img src="myImg/2 limits/limit law.png" alt="" class="xximg">
+<p>detail of law........</p>
+
+
+<div class="end"> THE END</div>             
+         
+
+  </div>
+  
+  </div>
+              <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+              <!-- $$$$$$$$$$$$$$$$$$$$$$$$$$$$$ -->
+              <!-- $$$$$$$$$$$$$$$$
+              $$$$$$$ --> 
+             <div class="three">
+              <h1 id="Derivatives">Derivatives</h1>
+              <img src="myImg/4 derivative/slopes-of-other-tangent-lines.webp" alt="">
+             <h2>What is a Derivative?</h2>
+             <h2>Quick Overview</h2>
+             <h4>The derivative is the main tool of Differential Calculus.
+              Specifically, a derivative is a function...
+              that tells us about rates of change, or...
+              slopes of tangent lines.
+              Its definition involves limits.</h4>
+              <h3>The Derivative is a Function</h3>
+              <p>Suppose we have a particular function:
+          
+                f(x)=2x<sup>5</sup>  +7x<sup>3</sup>+5
+                Through a process called differentiation1 we can find another function that's related to f. This second function is called the derivative of f. For this example, the derivative is:
+                
+                f′(x)=10x<sup>4</sup>+21x<sup>2</sup>
+                1Differentiation means finding the derivative.</p>
+                <h2>Two Notations for the Derivative</h2>
+                <img class="IMG" src="myImg/4 derivative/derivative-notation-explanation.png" alt="">
+                <h3>The Derivative Tells Us About Rates of Change</h3>
+                
+                    <h5 >Example 1</h5>
+                    <p >Suppose D(t) is a function that measures our distance from home (in miles) as a function of time (in hours). <br>
+          
+                      Then D(2)=5 means you are 5 miles from home after 2 hours have elapsed,
+                      
+                      and D′(2)=20 tells us that after 2 hours have elapsed...
+                      
+                      <span>
+                        our distance is changing 20 miles/ 
+                      for each hour that passes.
+                       
+                      =
+                      20 miles/
+                      each hour
+                       
+                      =20 miles per hour.
+                      </span>
+                      
+                      So D′(2)=20 is telling us that after 2 hours have elapsed our velocity is 20 miles per hour..</p>
+                   
+              
+                      <h5 >Example 2</h5>
+                      <p >Suppose C(x) is the cost (in dollars) of producing x tons of macaroni.
+          
+                        Then C(30)=15,000 tells us that producing 30 tons of macaroni will cost $15,000,
+                        
+                        and C′(30)=48,000 tells us that when we are producing 30 tons of macaroni, the associated costs are increasing at a rate of $48,000 per ton.</p>
+                    
+                <h3>The Derivative Tells Us About Slopes of Tangent Lines</h3>
+                <p> <span>Let's take another look at the Leibnitz notation for the derivative. If y=f(x) is our function then the derivative can be notated as
+          
+                  dy/
+                  dx
+                   
+                  =
+                  change in y/
+                  change in x
+                   
+                  =the slope of a line!
+                  
+                  Derivative values are the slopes of lines. Specifically, they are slopes of lines that are tangent to the function. See the example below.</span></p>
+              
+                      <h5 >Example 3</h5>
+                      <p >Suppose we have a function2 where f(2)=3 and f′(2)=1. The first equation tells us the point (2,3) is on the graph of the function. The second equation tells us the slope of the tangent line passing through this point</p>
+                      <img  class="IMG"src="myImg/4 derivative/slope-of-a-tangent-line.png" alt="">
+                      <p>Just like a slope tells us the direction a line is going, a derivative value tells us the direction a curve is going at a particular spot. At each point on the graph, the derivative value is the slope of the tangent line at that point.</p>
+                      <img src="myImg/4 derivative/slopes-of-other-tangent-lines.webp" alt="">
+                     
+                  
+                 <h3>Definition of the Derivative</h3>
+                 <img class="IMG"src="myImg/4 derivative/derivatives.defnition.png" alt="">
+                <h3>Variations of the Definition</h3>
+                <img class="IMG"src="myImg/4 derivative/derivative varation.png" alt="">
+             </div>
+                </div>
+                <hr>
+                <hr>
+                <hr>
+                <h3>How to Use the Definition of the Derivative</h3>
+            <div class="note bg-info">
+             <h2> Quick Overview</h2>
+The definition of the derivative is used to find derivatives of basic functions. <br>
+Derivatives always have the 0/0 indeterminate form. Consequently, we cannot evaluate directly, but have to manipulate the expression first. <br>
+We can use the definition to find the derivative function, or to find the value of the derivative at a particular point. <br>
+There are a few standard variations in how we write out the definition (see below for details)
+            </div>
+           
+           <p><h3>Variations in the Derivative Definition</h3>
+            The following are all standard variations for writing the definition of the derivative of f(x). The examples and exercises that follow will make use of each variation.</p>
+         <img class="IMG" src="myImg/4 derivative/derivative variation of defnition.png" alt="">
+         <div class="end"> THE END</div>
+              </main>
+     
+      </div>
+      </div>  
+    </div>
+   </div>
+
+
+    
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript">
+      const sidenavInstance = mdb.Sidenav.getInstance(document.getElementById('sidenav-1'));
+
+sidenavInstance.update({ color: 'warning'});
+    </script>
+  </body>
+</html>
