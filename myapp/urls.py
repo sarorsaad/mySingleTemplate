@@ -8,5 +8,8 @@ urlpatterns = [
   path("navbar/", views.navbar),
   path("calclusTXT/", views.calclusTXT),
   path("linearAlgebra/", views.linearAlgebra),
-#   path("calclusTXT/", views.calclusTXT),
+  path("cfe/", views.cfe),
+  path("index/", views.index),
+  path("home/", views.home),
+  path("context/", views.context),
 ]

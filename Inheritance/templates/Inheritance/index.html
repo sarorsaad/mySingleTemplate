@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My amazing inheritance application</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'inheritance/style.css' %}" />
+</head>
+ 
+<body>
+    <div id="sidebar">
+        <ul>
+            <li><a href="/inheritance/">inheritance</a></li>
+            <li><a href="/admin/">Admin</a></li>
+        </ul>
+    </div>
+ 
+    <div id="content">
+        {% if latest_question_list %}
+            <ul>
+            {% for question in latest_question_list %}
+                <li><a href="{% url 'inheritance:detail' question.id %}">{{ question.question_text }}</a></li>
+            {% endfor %}
+            </ul>
+        {% else %}
+            <p>No inheritance are available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>}
