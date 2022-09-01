@@ -1,13 +1,11 @@
-{% extends "base.html" %}  
+{% extends "base.html" %} 
+ 
 {% block content    %}
 
 <h1>welcome mlaz</h1>
-{% if name == 'mlaz' %}
-<p> welcome mlaz again</p>
-{% elif name == 'mazen' %}
-<p> welcome mhmd again</p>
-{% else %}
-<p> not found</p>
-{% endif  %}
+{% for x in name %}
+ <h1>{{x}}</h1>
+
+{% endfor  %}
 
 {% endblock content   %}

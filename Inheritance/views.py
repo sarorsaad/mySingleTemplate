@@ -10,7 +10,7 @@ def base(request):
 
 def about(request):
   x={
-    'name':'mohmd','age':13
+    'name':'saror','age':13
   }
 
   return render  (request, "Inheritance/about.html",x)
