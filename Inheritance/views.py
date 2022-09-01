@@ -9,8 +9,11 @@ def base(request):
   return render  (request, "Inheritance/base.html")
 
 def about(request):
+  x={
+    'name':'mohmd','age':13
+  }
 
-  return render  (request, "Inheritance/about.html")
+  return render  (request, "Inheritance/about.html",x)
 
 def footer(request):
 

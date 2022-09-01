@@ -2,6 +2,12 @@
 {% block content    %}
 
 <h1>welcome mlaz</h1>
+{% if name == 'mlaz' %}
+<p> welcome mlaz again</p>
+{% elif name == 'mazen' %}
+<p> welcome mhmd again</p>
+{% else %}
+<p> not found</p>
+{% endif  %}
 
-
-{% endblock content    %}
+{% endblock content   %}
