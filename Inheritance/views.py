@@ -11,3 +11,13 @@ def base(request):
 def about(request):
 
   return render  (request, "Inheritance/about.html")
+
+def footer(request):
+
+  return render  (request, "Inheritance/footer.html")
+def sidebar(request):
+
+  return render  (request, "Inheritance/sidebar.html")
+def navbar(request):
+
+  return render  (request, "Inheritance/navbar.html")
